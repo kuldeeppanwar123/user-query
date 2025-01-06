@@ -9,17 +9,32 @@ const userQuerySchema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    email:{
-        type:String,
+    schoolName: {
+        type: String,
         required: true
+    },
+    state: {
+        type: String,
+        required: true
+    },
+    city: {
+        type: String
+    },
+    email:{
+        type:String
     },
     phone:{
         type:String,
         required: true
     },
+    teacherCount: {
+        type: Number
+    },
+    source: {
+        type: String
+    },
     message:{
-        type: String,
-        required: true
+        type: String
     }
 },
 {
